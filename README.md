@@ -1,5 +1,6 @@
 # MySQL / MariaDB functions test
 Easy to test functions in MySQL / MariaDB.
+(In my case I want to test CAST function)
 
 ## Prepare
 After clone this project,
