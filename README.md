@@ -1,5 +1,5 @@
-# MySQL / MariaDB CAST function test
-Easy to test CAST function for MySQL / MariaDB.
+# MySQL / MariaDB functions test
+Easy to test functions in MySQL / MariaDB.
 
 ## Prepare
 After clone this project,
