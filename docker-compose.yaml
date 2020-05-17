@@ -1,0 +1,62 @@
+version: "3.7"
+services:
+  mysql-57:
+    # build:
+    #     context: .
+    #     dockerfile: DockerFile_MySQL_57
+    image: mysql:5.7
+    container_name: mysql-57
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_DATABASE=cast_test
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=password
+      - MYSQL_ROOT_PASSWORD=root
+    volumes:
+      - ./db-data-mysql-57:/var/lib/mysql
+  mysql-80:
+    # build:
+    #     context: .
+    #     dockerfile: DockerFile_MySQL_80
+    image: mysql:8.0
+    container_name: mysql-80
+    ports:
+      - 3307:3306
+    environment:
+      - MYSQL_DATABASE=cast_test
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=password
+      - MYSQL_ROOT_PASSWORD=root
+    volumes:
+      - ./db-data-mysql-80:/var/lib/mysql
+  mariadb-55:
+    # build:
+    #     context: .
+    #     dockerfile: DockerFile_MariaDB_55
+    image: mariadb:5.5
+    container_name: mariadb-55
+    ports:
+      - 3308:3306
+    environment:
+      - MYSQL_DATABASE=cast_test
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=password
+      - MYSQL_ROOT_PASSWORD=root
+    volumes:
+      - ./db-data-mariadb-55:/var/lib/mysql
+  mariadb-104:
+    # build:
+    #     context: .
+    #     dockerfile: DockerFile_MariaDB_104
+    image: mariadb:10.4
+    container_name: mariadb-104
+    ports:
+      - 3309:3306
+    environment:
+      - MYSQL_DATABASE=cast_test
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=password
+      - MYSQL_ROOT_PASSWORD=root
+    volumes:
+      - ./db-data-mariadb-104:/var/lib/mysql
